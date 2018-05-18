@@ -3,6 +3,50 @@ CHANGELOG
 
 This changelog references the relevant changes done in PHP-ML library.
 
+* Unreleased
+    * feature [Clustering] added KMeans associative clustering (#262)
+    * feature [Dataset] added removeColumns function to ArrayDataset (#249)
+    * feature [Dataset] added a SvmDataset class for SVM-Light (or LibSVM) format files (#237)
+    * feature [Optimizer] removed $initialTheta property and renamed setInitialTheta method to setTheta (#252)
+    * enhancement Add performance test for LeastSquares (#263)
+    * enhancement Micro optimization for matrix multiplication (#255)
+    * enhancement Throw proper exception (#259, #251)
+    * fix ensure DataTransformer::testSet samples array is not empty (#204)
+    * fix optimizer initial theta randomization (#239)
+    * typo, tests, code styles and documentation fixes (#265, #261, #254, #253, #251, #250, #248, #245, #243)
+
+* 0.6.2 (2018-02-22)
+    * Fix Apriori array keys (#238)
+
+* 0.6.1 (2018-02-18)
+    * Fix KMeans and EigenvalueDecomposition (#235)
+
+* 0.6.0 (2018-02-16)
+    * feature [FeatureSelection] implement SelectKBest with scoring functions (#232)
+    * feature [FeatureSelection] implement VarianceThreshold - simple baseline approach to feature selection.  (#228)
+    * feature [Classification] support probability estimation in SVC (#218)
+    * feature [NeuralNetwork] configure an Activation Function per hidden layer (#208)
+    * feature [NeuralNetwork] Ability to update learningRate in MLP (#160)
+    * feature [Metric] Choose averaging method in classification report (#205)
+    * enhancement Add phpstan strict rules (#233)
+    * enhancement Flatten directory structure (#220)
+    * enhancement Update phpunit/phpunit (#219)
+    * enhancement Cache dependencies installed with composer on Travis (#215)
+    * enhancement Add support for coveralls.io (#153)
+    * enhancement Add phpstan and easy coding standards (#156, #168)
+    * enhancement Throw exception when libsvm command fails to run (#200, #202)
+    * enhancement Normalize composer.json and sort packages (#214, #210)
+    * enhancement Rewrite DBSCAN (#185)
+    * fix phpunit include tests path (#230)
+    * fix support of a rule in Apriori (#229)
+    * fix apriori generates an empty array as a part of the frequent item sets (#224)
+    * fix backpropagation random error (#157)
+    * fix logistic regression implementation (#169)
+    * fix activation functions support (#163)
+    * fix string representation of integer labels issue in NaiveBayes (#206)
+    * fix the implementation of conjugate gradient method (#184)
+    * typo, tests and documentation fixes (#234, #221, #181, #183, #155, #159, #165, #187, #154, #191, #203, #209, #213, #212, #211)
+
 * 0.5.0 (2017-11-14)
     * general [php] Upgrade to PHP 7.1 (#150)
     * general [coding standard] fix imports order and drop unused docs typehints
@@ -48,7 +92,7 @@ This changelog references the relevant changes done in PHP-ML library.
     * bug [Metric] - division by zero
 
 * 0.2.0 (2016-08-14)
-    * feature [NeuralNetwork] - MultilayerPerceptron and Backpropagation training 
+    * feature [NeuralNetwork] - MultilayerPerceptron and Backpropagation training
 
 * 0.1.2 (2016-07-24)
     * feature [Dataset] - FilesDataset - load dataset from files (folder names as targets)
@@ -58,7 +102,7 @@ This changelog references the relevant changes done in PHP-ML library.
 
 * 0.1.1 (2016-07-12)
     * feature [Cross Validation] Stratified Random Split - equal distribution for targets in split
-    * feature [General] Documentation - add missing pages (Pipeline, ConfusionMatrix and TfIdfTransformer) and fix links 
+    * feature [General] Documentation - add missing pages (Pipeline, ConfusionMatrix and TfIdfTransformer) and fix links
 
 * 0.1.0 (2016-07-08)
     * first develop release

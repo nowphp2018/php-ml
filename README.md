@@ -6,14 +6,12 @@
 [![Documentation Status](https://readthedocs.org/projects/php-ml/badge/?version=master)](http://php-ml.readthedocs.org/)
 [![Total Downloads](https://poser.pugx.org/php-ai/php-ml/downloads.svg)](https://packagist.org/packages/php-ai/php-ml)
 [![License](https://poser.pugx.org/php-ai/php-ml/license.svg)](https://packagist.org/packages/php-ai/php-ml)
-[![Coverage Status](https://coveralls.io/repos/github/php-ai/php-ml/badge.svg?branch=coveralls)](https://coveralls.io/github/php-ai/php-ml?branch=coveralls)
+[![Coverage Status](https://coveralls.io/repos/github/php-ai/php-ml/badge.svg?branch=master)](https://coveralls.io/github/php-ai/php-ml?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-ai/php-ml/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/php-ai/php-ml/?branch=master)
 
-<a href="http://www.yegor256.com/2016/10/23/award-2017.html">
-  <img src="http://www.yegor256.com/images/award/2017/winner-itcraftsmanpl.png"
-  style="width:203px;height:45px;"/></a>
-
-![PHP-ML - Machine Learning library for PHP](docs/assets/php-ml-logo.png)
+<p align="center">
+	<img src="https://github.com/php-ai/php-ml/blob/master/docs/assets/php-ml-logo.png" />
+</p>
 
 Fresh approach to Machine Learning in PHP. Algorithms, Cross Validation, Neural Network, Preprocessing, Feature Extraction and much more in one library.
 
@@ -35,6 +33,11 @@ echo $classifier->predict([3, 2]);
 // return 'b'
 ```
 
+## Awards
+
+<a href="http://www.yegor256.com/2016/10/23/award-2017.html">
+  <img src="http://www.yegor256.com/images/award/2017/winner-itcraftsmanpl.png" width="400"/></a>
+
 ## Documentation
 
 To find out how to use PHP-ML follow [Documentation](http://php-ml.readthedocs.org/).
@@ -50,6 +53,10 @@ composer require php-ai/php-ml
 ## Examples
 
 Example scripts are available in a separate repository [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples).
+
+## Datasets
+
+Public datasets are available in a separate repository [php-ai/php-ml-datasets](https://github.com/php-ai/php-ml-datasets).
 
 ## Features
 
@@ -87,6 +94,9 @@ Example scripts are available in a separate repository [php-ai/php-ml-examples](
 * Cross Validation
     * [Random Split](http://php-ml.readthedocs.io/en/latest/machine-learning/cross-validation/random-split/)
     * [Stratified Random Split](http://php-ml.readthedocs.io/en/latest/machine-learning/cross-validation/stratified-random-split/)
+* Feature Selection
+    * [Variance Threshold](http://php-ml.readthedocs.io/en/latest/machine-learning/feature-selection/variance-threshold/)
+    * [SelectKBest](http://php-ml.readthedocs.io/en/latest/machine-learning/feature-selection/selectkbest/)
 * Preprocessing
     * [Normalization](http://php-ml.readthedocs.io/en/latest/machine-learning/preprocessing/normalization/)
     * [Imputation missing values](http://php-ml.readthedocs.io/en/latest/machine-learning/preprocessing/imputation-missing-values/)
@@ -101,6 +111,7 @@ Example scripts are available in a separate repository [php-ai/php-ml-examples](
     * [Array](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/array-dataset/)
     * [CSV](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/csv-dataset/)
     * [Files](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/files-dataset/)
+    * [SVM](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/svm-dataset/)
     * Ready to use:
         * [Iris](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/demo/iris/)
         * [Wine](http://php-ml.readthedocs.io/en/latest/machine-learning/datasets/demo/wine/)
@@ -116,6 +127,7 @@ Example scripts are available in a separate repository [php-ai/php-ml-examples](
 
 ## Contribute
 
+- [Guide: CONTRIBUTING.md](https://github.com/php-ai/php-ml/blob/master/CONTRIBUTING.md)
 - [Issue Tracker: github.com/php-ai/php-ml](https://github.com/php-ai/php-ml/issues)
 - [Source Code:  github.com/php-ai/php-ml](https://github.com/php-ai/php-ml)
 
